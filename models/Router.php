@@ -18,6 +18,38 @@ class Router {
       case "login":
         $this->viewsManager->loadLogin();
         break;
+
+      case "practica1":
+        $this->viewsManager->loadPractica1();
+        break;
+
+      case "practica2":
+        $this->viewsManager->loadPractica2();
+        break;
+
+      case "practica3":
+        $this->viewsManager->loadPractica3();
+        break;
+
+      case "practica4":
+        $this->viewsManager->loadPractica4();
+        break;
+
+      case "practica5":
+        $this->viewsManager->loadPractica5();
+        break;
+
+      case "productos":
+        $this->viewsManager->loadProductos();
+        break;
+
+      case "transacciones":
+        $this->viewsManager->loadTransacciones();
+        break;
+
+      case "carrito":
+        $this->viewsManager->loadCarrito();
+        break;
       
       default:
         $this->viewsManager->loadLogin();
