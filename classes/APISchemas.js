@@ -1,5 +1,5 @@
 class APISchemas {
   constructor(){
-    this.root = "";
+    this.root = "http://localhost:3000/api/";
   }
 }

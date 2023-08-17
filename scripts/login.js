@@ -10,7 +10,7 @@ $("#btnLogin").click(function(){
     .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
-        console.log(user.uid);
+        window.location = "?view=home";
     })
     .catch((error) => {
         var errorCode = error.code;
