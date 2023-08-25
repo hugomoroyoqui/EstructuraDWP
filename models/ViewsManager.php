@@ -14,7 +14,7 @@ class ViewsManager
   function setFileName($fileName) {
 
     $this->fileName = $fileName;
-    if($fileName == "login.php") {
+    if($fileName == "login.php" || $fileName == "signup.php") {
       $this->generateOutsideBody();
     } else if($fileName == "home.php" 
     || $fileName == "practica1.php"
@@ -111,6 +111,11 @@ class ViewsManager
   function loadCarrito(){
     $this->head->setTitle("Carrito");
     $this->setFileName("carrito.php");
+  }
+
+  function loadSignUp(){
+    $this->head->setTitle("Registro");
+    $this->setFileName("signup.php");
   }
 
 }

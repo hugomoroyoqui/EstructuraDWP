@@ -50,6 +50,10 @@ class Router {
       case "carrito":
         $this->viewsManager->loadCarrito();
         break;
+
+      case "signup":
+        $this->viewsManager->loadSignUp();
+        break;
       
       default:
         $this->viewsManager->loadLogin();

@@ -1,15 +1,15 @@
 var api = new APISchemas();
 var firebaseCol = new FirebaseCollections();
 
-$("#btnLogin").click(function(){
+$("#btnSignUp").click(function(){
 
-    var email = $("#email").val(), 
-    password = $("#password").val();
+    var email = $("#semail").val(), 
+    password = $("#spassword").val();
 
-    auth.signInWithEmailAndPassword(email, password)
+    auth.createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
         // Signed in
-        // var user = userCredential.user;
+        //var user = userCredential.user;
         window.location = "?view=productos";
     })
     .catch((error) => {

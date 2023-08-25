@@ -7,26 +7,30 @@
       <div class="card white">
         <div class="card-content black-text">
             <div class="row">
+
                 <div class="input-field col s12 center">
                     <img src="./res/img/trade.png" width="100px" height="100px"/></br>
-                    <span>Ingresa tus credenciales de acceso</span>
+                    <span>Ingresa tus credenciales de acceso para completar tu registro.</span>
                 </div>
 
                 <div class="input-field col s12 center">
-                    <input id="email" type="text" class="validate">
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-field col s12 center">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                </div>
-                <div class="input-field col s12 center">
-                <a id="btnLogin" class="waves-effect waves-light btn-large purple darken-4 white-text" style="width:80%"><i class="material-icons left">send</i>Entrar</a>
+                    <input id="semail" type="text" class="validate">
+                    <label for="semail">Email</label>
                 </div>
 
                 <div class="input-field col s12 center">
-                    <a class="purple-text darken-4" href="?view=signup">Necesito crear una cuenta.</a>
+                    <input id="spassword" type="password" class="validate">
+                    <label for="spassword">Password</label>
                 </div>
+
+                <div class="input-field col s12 center">
+                    <a id="btnSignUp" class="waves-effect waves-light btn-large purple darken-4 white-text" style="width:80%"><i class="material-icons left">send</i>Registrar usuario</a>
+                </div>
+
+                <div class="input-field col s12 center">
+                    <a class="purple-text darken-4" href="?view=login">Ya tengo una cuenta, quiero iniciar sesión.</a>
+                </div>
+
             </div>
             
         </div>
@@ -37,4 +41,4 @@
 
   </div>
 
-<script type="text/javascript" src="./scripts/login.js?v1.0.0"></script>
+<script type="text/javascript" src="./scripts/signup.js?v1.0.0"></script>
